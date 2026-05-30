@@ -1,3 +1,5 @@
+.
+
 🚀 AWS Three-Tier Architecture Project
 👨‍💻 Built & Deployed By
 
@@ -25,7 +27,6 @@ Application Load Balancer (ALB)
 Auto Scaling Groups
 Amazon RDS MySQL Database
 Security Groups & Route Tables
-
 🧠 My Implementation Work
 
 I personally implemented the following:
@@ -65,7 +66,6 @@ Load Balancer
 Auto Scaling Group
 RDS MySQL
 
-
 📂 Project Structure
 backend/
 database/
@@ -75,7 +75,6 @@ Screenshot/
 aws-three-tier-architecture.png
 README.md
 
-
 🚀 Key Learnings
 AWS networking (VPC, Subnets, Routing)
 High availability architecture design
@@ -83,8 +82,6 @@ Load balancing and traffic distribution
 Auto Scaling and fault tolerance
 Real-world cloud deployment troubleshooting
 Multi-tier application architecture design
-
-
 🎯 Final Outcome
 
 Successfully deployed a scalable, highly available 3-tier architecture on AWS, demonstrating real-world DevOps and Cloud engineering skills.
