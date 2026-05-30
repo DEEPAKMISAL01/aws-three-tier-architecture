@@ -66,14 +66,41 @@ Load Balancer
 Auto Scaling Group
 RDS MySQL
 
-📂 Project Structure
-backend/
-database/
-frontend/
-infrastructure/
-Screenshot/
-aws-three-tier-architecture.png
-README.md
+## 📂 Project Structure
+
+
+aws-three-tier-architecture/
+│
+├── backend/
+│   └── PHP application and API files
+│
+├── database/
+│   └── MySQL database scripts
+│
+├── frontend/
+│   └── HTML, CSS and JavaScript files
+│
+├── infrastructure/
+│   ├── frontend_server.md
+│   ├── backend_server.md
+│   └── nginx_config
+│
+├── Screenshot/
+│   ├── Vpc.png
+│   ├── Subnet.png
+│   ├── Route Table.png
+│   ├── IGW.png
+│   ├── NAT.png
+│   ├── Ec2 Instance.png
+│   ├── Nginx.png
+│   ├── Load Balancer.png
+│   ├── Auto Scaling Groupe.png
+│   └── RDS.png
+│
+├── aws-three-tier-architecture.png
+│
+└── README.md
+
 
 🚀 Key Learnings
 AWS networking (VPC, Subnets, Routing)
