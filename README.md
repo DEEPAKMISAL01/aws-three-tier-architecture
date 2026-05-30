@@ -1,83 +1,79 @@
-# AWS Three-Tier Architecture Project (Custom Implementation)
+# AWS Three-Tier Architecture Deployment Project
 
-## 👨‍💻 Author
+## 👨‍💻 Built & Deployed By
 Deepak Misal
-
-## 📌 Project Overview
-
-This project demonstrates a fully deployed **3-tier architecture on AWS** using real-world DevOps practices.
-
-It includes:
-- Frontend Tier (NGINX on EC2)
-- Backend Tier (PHP Application Server)
-- Database Tier (Amazon RDS MySQL)
-
-The infrastructure was manually designed, configured, and tested on AWS using VPC, subnets, load balancers, and auto scaling.
 
 ---
 
-## 🏗️ Architecture Diagram
+## 📌 Project Summary
+
+I designed and deployed a complete **3-tier architecture on AWS** as part of my DevOps learning and hands-on cloud practice.
+
+The entire infrastructure was manually built using AWS console and tested end-to-end with real EC2, networking, and database connectivity.
+
+---
+
+## 🏗️ Architecture Design
 
 ![Architecture](aws-three-tier-architecture.png)
 
 ---
 
-## ☁️ AWS Services Used
+## ☁️ AWS Services I Used
 
-- Amazon VPC (Custom Network)
-- Public & Private Subnets
+- VPC (custom network design)
+- Public & Private Subnets across multiple AZs
 - Internet Gateway (IGW)
-- NAT Gateway
-- EC2 Instances (Web + App Tier)
+- NAT Gateway for private subnet access
+- EC2 instances for Web and Application tiers
+- NGINX configured on frontend servers
+- PHP backend application setup
 - Application Load Balancer (ALB)
-- Auto Scaling Groups
-- Amazon RDS (MySQL)
-- Security Groups
-- Route Tables
+- Auto Scaling Groups for high availability
+- Amazon RDS MySQL database
+- Security Groups and Route Tables
 
 ---
 
-## 🖼️ Proof of Implementation (Screenshots)
+## 🧠 What I Actually Did (My Work)
 
-All real AWS deployment screenshots are available in the `Screenshot/` folder:
+- Designed a full VPC architecture from scratch
+- Planned subnetting for web, app, and database layers
+- Configured routing between public and private networks
+- Deployed EC2 instances and configured NGINX manually
+- Set up backend PHP application and connected it with RDS MySQL
+- Configured Load Balancers and Target Groups
+- Enabled Auto Scaling for high availability
+- Verified full end-to-end traffic flow from browser → database
 
-- VPC Setup
-- Subnets Configuration
-- Route Tables
+---
+
+## ⚠️ Issues I Faced & Solved
+
+- Fixed CIDR overlap errors while designing subnets
+- Resolved NAT Gateway dependency issues during setup and cleanup
+- Debugged security group communication between tiers
+- Fixed NGINX and backend connectivity issues
+- Handled EC2-to-RDS connection configuration issues
+
+---
+
+## 📸 AWS Implementation Evidence
+
+All real AWS setup screenshots are available in:
+
+/Screenshot
+
+Includes:
+- VPC configuration
+- Subnets
+- Route tables
 - Internet Gateway
 - NAT Gateway
-- EC2 Instances
-- NGINX Server Setup
+- EC2 instances
 - Load Balancer
 - Auto Scaling Group
-- RDS Database
-
----
-
-## 🧠 My Contributions
-
-This project was not just deployed — it was fully configured and troubleshot manually:
-
-- Designed custom VPC architecture
-- Created multi-AZ subnet architecture
-- Configured routing (IGW + NAT)
-- Set up EC2 instances for web and application tiers
-- Installed and configured NGINX and PHP backend
-- Connected application with RDS MySQL database
-- Configured Load Balancers and Target Groups
-- Fixed issues like:
-  - CIDR overlap errors
-  - NAT Gateway dependency issues
-  - Security group misconfigurations
-
----
-
-## ⚠️ Challenges Faced
-
-- CIDR block planning for multi-subnet architecture
-- NAT Gateway dependency during cleanup
-- Security group communication between tiers
-- Debugging NGINX and backend connectivity
+- RDS setup
 
 ---
 
@@ -95,27 +91,16 @@ README.md
 
 ## 🚀 Key Learnings
 
-- VPC design and subnet planning
-- Load balancing and high availability
-- Auto Scaling concepts
-- Multi-tier architecture design
-- AWS networking fundamentals
-- Real-world deployment troubleshooting
+- Real-world AWS networking (VPC, routing, subnets)
+- Load balancing and high availability concepts
+- Auto Scaling and fault tolerance
+- Multi-tier application architecture design
+- Troubleshooting cloud infrastructure issues
 
 ---
 
-## 📸 Screenshots
+## 🎯 Project Outcome
 
-Refer to `/Screenshot` folder for full AWS deployment evidence.
+Successfully deployed a fully working **scalable three-tier architecture on AWS**, with proper separation of frontend, backend, and database layers.
 
----
-
-## 📜 License
-
-This project is for learning and DevOps portfolio purposes.
-
----
-
-## 🙌 Conclusion
-
-This project demonstrates hands-on AWS DevOps skills by deploying a scalable and highly available three-tier architecture in a real cloud environment.
+This project helped me gain practical experience in cloud infrastructure and DevOps deployment workflows.
