@@ -105,40 +105,7 @@ Screenshots are available in:
 
 ---
 
-## 📂 Project Structure
 
-devops-terraform-iac-aws/
-│
-├── provider.tf
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
-├── .gitignore
-│
-└── modules/
-    │
-    ├── vpc/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   └── outputs.tf
-    │
-    ├── ec2/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   └── outputs.tf
-    │
-    ├── alb/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   └── outputs.tf
-    │
-    └── rds/
-        ├── main.tf
-        ├── variables.tf
-        └── outputs.tf
-
----
 
 ## 🚀 Key Learnings
 
