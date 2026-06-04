@@ -107,39 +107,36 @@ Screenshots are available in:
 
 ## 📂 Project Structure
 
-```text
-aws-three-tier-architecture/
+devops-terraform-iac-aws/
 │
-├── backend/
-│   └── PHP application and API files
+├── provider.tf
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
+├── .gitignore
 │
-├── database/
-│   └── MySQL database scripts
-│
-├── frontend/
-│   └── HTML, CSS and JavaScript files
-│
-├── infrastructure/
-│   ├── frontend_server.md
-│   ├── backend_server.md
-│   └── nginx_config
-│
-├── Screenshot/
-│   ├── Vpc.png
-│   ├── Subnet.png
-│   ├── Route Table.png
-│   ├── IGW.png
-│   ├── NAT.png
-│   ├── Ec2 Instance.png
-│   ├── Nginx.png
-│   ├── Load Balancer.png
-│   ├── Auto Scaling Groupe.png
-│   └── RDS.png
-│
-├── aws-three-tier-architecture.png
-│
-└── README.md
-```
+└── modules/
+    │
+    ├── vpc/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    ├── ec2/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    ├── alb/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    │
+    └── rds/
+        ├── main.tf
+        ├── variables.tf
+        └── outputs.tf
 
 ---
 
